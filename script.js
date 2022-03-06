@@ -38,9 +38,6 @@ btnRoll.addEventListener(`click`, function () {
   if (playing) {
     // .1 Generating a random number
     let diceGen = Math.trunc(Math.random() * 6 + 1);
-    if (activePlayer === 1) {
-      diceGen = Math.trunc(Math.random() * 5 + 2);
-    }
     // Unless it's a 1, update score and show correct dice img
     dice.classList.remove(`hidden`);
     dice.src = `dice-${diceGen}.png`;
