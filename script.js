@@ -19,6 +19,16 @@ let currentScore = 0;
 let activePlayer = 0;
 let playing = true;
 
+alert(`Poenget med spillet er å ikke kaste 1 på terningen.`);
+alert(
+  `Kaster du 1 mister du current poengscore og det blir neste spillers tur.`
+);
+alert(
+  `Du kan lagre summen du har kastet deg til
+ ved å trykke "Hold"
+ da blir det neste spiller sin tur.`
+);
+
 const switchPlayer = function () {
   currentScore = 0;
   document.querySelector(`#current--${activePlayer}`).textContent =
