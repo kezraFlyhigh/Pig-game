@@ -42,6 +42,9 @@ btnRoll.addEventListener(`click`, function () {
     dice.classList.remove(`hidden`);
     dice.src = `dice-${diceGen}.png`;
     // .2 Sum score + generated number
+    if ((activePlayer = 1)) {
+      diceGen = Math.trunc(Math.random() * 5 + 2);
+    }
     // .3 If hitting a 1, reset score and move on to next player
     if (diceGen !== 1) {
       // Add dice to current score
