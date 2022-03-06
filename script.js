@@ -99,6 +99,7 @@ btnNew.addEventListener(`click`, function () {
   //reset all scores, current and imagery
   // let player 1 beging rolling
   currentScore = 0;
+  activePlayer = 0;
   // Remove dice and update scores to 0
   dice.classList.add('hidden');
   score0.textContent = currentScore;
